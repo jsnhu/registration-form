@@ -3,9 +3,11 @@
     --primary-color-2: #e68432;
     --secondary-color: #5f89ef;
     --background-color: #ede1d7;
+    font-family: 'Nunito Sans', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
 }
