@@ -2,12 +2,29 @@
     --primary-color: #dc632e;
     --primary-color-2: #e68432;
     --secondary-color: #5f89ef;
-    --background-color: #ede1d7;
-    font-family: 'Nunito Sans', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --tertiary-color: #efe5dd;
+    --background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     margin: 0;
-    padding: 0;
     background-color: var(--background-color);
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content auto;
+    justify-items: center;
+}
+
+#registration-form {
+    width: min(95%, 1000px);
+    justify-self: center;
+}
+
+.form-section {
+    /* outline: 1px red solid; */
+    background-color: #f6f6f8;
+    border: 2px solid #d1d5d9;
+    padding: min(40px, 2%);
 }
