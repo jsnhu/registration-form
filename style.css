@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #dc632e;
     --primary-color-2: #e68432;
@@ -23,8 +27,28 @@ body {
 }
 
 .form-section {
-    /* outline: 1px red solid; */
     background-color: #f6f6f8;
     border: 2px solid #d1d5d9;
     padding: min(40px, 2%);
+}
+
+#categories input[type='radio'] {
+    display: none;
+}
+
+.event-category label {
+    padding: 10px 3%;
+    background-color: hwb(210 82% 15%);
+    border: 2px solid hwb(210 82% 45%);
+
+}
+
+#categories input[type='radio']:checked + label {
+    background-color: #88ff886a;
+    border: 2px #88ff88 solid;
+}
+
+.event-sub-category {
+    display: flex;
+    flex-direction: column;
 }
