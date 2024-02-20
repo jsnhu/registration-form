@@ -79,11 +79,20 @@ body {
 .categories-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.4s ease-out;
+}
+
+.categories-content.show {
+    max-height: 2000px;
 }
 
 span.expand-button {
     font-size: 48px;
+    transition: transform 0.2s ease-out;
+}
+
+span.expand-button.upside-down {
+    transform: rotate(180deg);
 }
 
 .section-header {
@@ -93,6 +102,6 @@ span.expand-button {
 }
  
 
-#categories:hover {
+.section-header:hover {
     cursor: pointer;
 }
