@@ -244,14 +244,65 @@
 
         <section class="form-section">
             <h2>Donation</h2>
+
+            <div class="donation-row">
+                <div class="donation-org">ORGANIZATION A</div>
+                <div class="donation-amount">
+                    <label for="org-a-donation">AMOUNT C$</label>
+                    <input type="number" name="org-a-donation" id="org-a-donation">
+                </div>
+            </div>
+            <div class="donation-row">
+                <div class="donation-org">ORGANIZATION A</div>
+                <div class="donation-amount">
+                    <label for="org-a-donation">AMOUNT C$</label>
+                    <input type="number" name="org-a-donation" id="org-a-donation">
+                </div>
+            </div>
+            <div class="donation-row">
+                <div class="donation-org">ORGANIZATION A</div>
+                <div class="donation-amount">
+                    <label for="org-a-donation">AMOUNT C$</label>
+                    <input type="number" name="org-a-donation" id="org-a-donation">
+                </div>
+            </div>
+            <div class="donation-row">
+                <div class="donation-org">ORGANIZATION A</div>
+                <div class="donation-amount">
+                    <label for="org-a-donation">AMOUNT C$</label>
+                    <input type="number" name="org-a-donation" id="org-a-donation">
+                </div>
+            </div>
         </section>
 
         <section class="form-section">
             <h2>Waiver</h2>
+            <div class="waiver-row">
+                <input type="checkbox" name="user-agree-terms" id="user-agree-terms">
+                <label for="user-agree-terms">I HAVE READ AND AGREED TO THE TERMS</label>
+            </div>
+            <div class="waiver-row">
+                <div class="heading">PARTICIPANT AGE</div>
+                <div class="age-option">
+                    <!-- why do we need this if we have their age above? -->
+                    <input type="radio" name="user-age-info" id="user-age-adult">
+                    <label for="user-age-adult">19 or older</label>
+                </div>
+                <div class="age-option">
+                    <input type="radio" name="user-age-info" id="user-age-non-adult">
+                    <label for="user-age-non-adult">Under 19</label>
+                </div>
+            </div>
         </section>
 
         <section class="form-section">
             <h2>Payment</h2>
+
+            <div class="promo-code-section">
+                <label for="promo-code">PROMO CODE</label>
+                <input type="text" name="promo-code" id="promo-code">
+                <button type="button">APPLY</button>
+            </div>            
 
         </section>
 
