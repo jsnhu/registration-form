@@ -86,11 +86,12 @@ span.expand-button {
     font-size: 48px;
 }
 
-.categories-header {
+.section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+ 
 
 #categories:hover {
     cursor: pointer;
