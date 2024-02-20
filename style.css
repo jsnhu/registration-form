@@ -39,13 +39,13 @@ body {
 .event-category label {
     padding: 10px 3%;
     background-color: hwb(210 82% 15%);
-    border: 2px solid hwb(210 82% 45%);
+    border: 1px solid hwb(210 82% 45%);
 
 }
 
 #categories input[type='radio']:checked + label {
     background-color: #88ff886a;
-    border: 2px #88ff88 solid;
+    border: 1px #88ff88 solid;
 }
 
 .event-sub-category {
