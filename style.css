@@ -37,6 +37,9 @@ body {
 #registration-form {
     width: min(95%, 1000px);
     justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .form-section {
@@ -144,4 +147,9 @@ select {
 .team-dropdown-box {
     display: flex;
     flex-direction: column;
+}
+
+.donation-row {
+    display: flex;
+    justify-content: space-between;
 }
