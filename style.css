@@ -139,7 +139,8 @@ select {
 }
 
 .shirt-option,
-.wheelchair-option {
+.wheelchair-option,
+.age-option {
     display: flex;
     flex-direction: column;
 }
