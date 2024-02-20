@@ -52,6 +52,7 @@ body {
     padding: 10px 3%;
     background-color: var(--form-grey-1);
     border: 1px solid var(--form-grey-3);
+    transition: background-color ease-out 0.4s;
 
 }
 
