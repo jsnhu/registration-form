@@ -75,3 +75,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.categories-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+span.expand-button {
+    font-size: 48px;
+}
+
+.categories-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
