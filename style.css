@@ -228,3 +228,9 @@ select {
 #cancel-button::after {
     background-color: #ff8888;
 }
+
+#disclaimer {
+    padding: 20px;
+    font-style: italic;
+    
+}
