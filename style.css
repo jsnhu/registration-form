@@ -154,3 +154,41 @@ select {
     justify-content: space-between;
 }
 
+.cost-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cost-row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+}
+
+.cost-unit {
+    justify-self: center;
+    align-self: center;
+}
+
+.cost-row input {
+    text-align: right;
+}
+
+.cost-row.bottom-row .cost-item,
+.cost-row.bottom-row .cost-unit {
+    font-weight: bold;
+}
+
+.bottom-row {
+    border-top: var(--form-grey-4) 2px solid;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.cost-unit {
+    justify-self: right;
+    padding-right: 10px;
+}
+
+#cost-total {
+    text-shadow: 1px 0px 0px black;
+}
