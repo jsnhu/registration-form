@@ -2,7 +2,12 @@
 
 const sectionHeaders = document.querySelectorAll('.section-header');
 
+
+
 sectionHeaders.forEach((header) => {
+    const sectionContent = header.parentNode.querySelector('.section-content');
+    sectionContent.classList.toggle('show');
+    
     header.addEventListener('click', () => {
         const sectionContent = header.parentNode.querySelector('.section-content');
         sectionContent.classList.toggle('show');
