@@ -118,8 +118,8 @@ span.expand-button.upside-down {
     
 }
 
-#participant-information .section-content,
-#participant-information .section-content .participant-information-field {
+.section-content,
+.participant-information-field {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -140,7 +140,8 @@ select {
 
 .shirt-option,
 .wheelchair-option,
-.age-option {
+.age-option,
+.team-dropdown-box {
     display: flex;
     flex-direction: column;
 }
