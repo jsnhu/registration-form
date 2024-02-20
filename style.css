@@ -45,11 +45,11 @@ body {
     padding: min(40px, 2%);
 }
 
-#categories input[type='radio'] {
+input[type='radio'] {
     display: none;
 }
 
-.event-category label {
+input[type='radio'] + label {
     padding: 10px 3%;
     background-color: var(--form-grey-1);
     border: 1px solid var(--form-grey-3);
@@ -57,7 +57,7 @@ body {
 
 }
 
-#categories input[type='radio']:checked + label {
+input[type='radio']:checked + label {
     background-color: #88ff886a;
     border: 1px rgb(0, 157, 0) solid;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .section-content.show {
-    max-height: 2000px;
+    max-height: 4000px;
 }
 
 span.expand-button {
@@ -116,4 +116,30 @@ span.expand-button.upside-down {
     font-weight: 500;
     margin: 25px 0px 5px;
     
+}
+
+#participant-information .section-content,
+#participant-information .section-content .participant-information-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#participant-information .section-content {
+    gap: 20px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='date'],
+select {
+    height: 40px;
+    font-size: inherit;
+}
+
+.shirt-option,
+.wheelchair-option {
+    display: flex;
+    flex-direction: column;
 }
