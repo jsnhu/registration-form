@@ -86,233 +86,265 @@
         </section>
 
         <section class="form-section">
-            <h2>TEAM SELECTION</h2>
-            <label for="teams-list">TEAM*</label>
-            <div class="team-dropdown-box">
-                <select name="teams-list" id="teams-list">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select>
+            <div class="section-header">
+                <h2>Team Selection</h2>
+                <span class="material-symbols-outlined expand-button">
+                    expand_more
+                </span>
             </div>
-            <label for="team-access-code">TEAM ACCESS CODE*</label>
-            <input type="number" id="team-access-code" name="team-access-code">
+
+            <div class="section-content">
+                <label for="teams-list">TEAM*</label>
+                <div class="team-dropdown-box">
+                    <select name="teams-list" id="teams-list">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <label for="team-access-code">TEAM ACCESS CODE*</label>
+                <input type="number" id="team-access-code" name="team-access-code">
+            </div>
         </section>
 
         <section class="form-section" id="participant-information">
-            <h2>Participant Information</h2>
+            <div class="section-header">
+                <h2>Participant Information</h2>
+                <span class="material-symbols-outlined expand-button">
+                    expand_more
+                </span>
+            </div>
             
-            <div class="participant-information-field">
-                <label for="user-mail">CONTACT EMAIL</label>
-                <input type="email" name="user-mail" id="user-mail">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-first-name">PARTICIPANT FIRST NAME</label>
-                <input type="text" name="user-first-name" id="user-first-name">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-last-name">PARTICIPANT LAST NAME</label>
-                <input type="text" name="user-last-name" id="user-last-name">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-birthday">PARTICIPANT BIRTHDATE</label>
-                <input type="date" name="user-birthday" id="user-birthday">
-            </div>
-            <div class="participant-information-field">
-                <div>PARTICIPANT GENDER</div>
-                <input type="radio" name="user-gender" id="user-gender-male">
-                <label for="user-gender-male">Identifies as Male</label>
-
-                <input type="radio" name="user-gender" id="user-gender-female">
-                <label for="user-gender-female">Identifies as Female</label>
-
-                <input type="radio" name="user-gender" id="user-gender-non-binary">
-                <label for="user-gender-non-binary">Non-Binary</label>
-
-                <input type="radio" name="user-gender" id="user-gender-no-answer">
-                <label for="user-gender-no-answer">Prefer Not To Say</label>
-            </div>
-            <div class="participant-information-field">
-                <div>COUNTRY</div>
-                <input type="radio" name="user-country" id="user-country-canada">
-                <label for="user-country-canada">Canada</label>
-
-                <input type="radio" name="user-country" id="user-country-usa">
-                <label for="user-country-usa">USA</label>
-
-                <input type="radio" name="user-country" id="user-country-intl">
-                <label for="user-country-intl">International</label>
-
-            </div>
-            <div class="participant-information-field">
-                <label for="user-street-address">STREET ADDRESS (W/APT#)</label>
-                <input type="text" name="user-street-address" id="user-street-address">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-city">CITY</label>
-                <input type="text" name="user-city" id="user-city">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-province">PROVINCE</label>
-                <select name="user-province" id="user-province">
-                    <option value="Alberta">Alberta</option>
-                    <option value="Alberta">Alberta</option>
-                    <option value="Alberta">Alberta</option>
-                    <option value="Alberta">Alberta</option>
-                    <option value="Alberta">Alberta</option>
-                    <option value="Alberta">Alberta</option>
-                </select>
-            </div>
-            <div class="participant-information-field">
-                <label for="user-postal-code">POSTAL CODE</label>
-                <input type="text" name="user-postal-code" id="user-postal-code">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-phone-number">PHONE</label>
-                <input type="number" name="user-phone-number" id="user-phone-number">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-emergency-contact-name">EMERGENCY CONTACT NAME</label>
-                <input type="text" name="user-emergency-contact-name" id="user-emergency-contact-name">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-emergency-contact-phone">EMERGENCY CONTACT PHONE</label>
-                <input type="number" name="user-emergency-contact-phone" id="user-emergency-contact-phone">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-medical-alert">MEDICAL ALERT</label>
-                <input type="text" name="user-medical-alert" id="user-medical-alert">
-            </div>
-            <div class="participant-information-field"></div>
-            
-            <div class="participant-information-field">
-                <h4>Participant Shirt Size</h4>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-xs">Adult XS - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-xs">
+            <div class="section-content">
+                <div class="participant-information-field">
+                    <label for="user-mail">CONTACT EMAIL</label>
+                    <input type="email" name="user-mail" id="user-mail">
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-s">Adult S - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-s">
+                <div class="participant-information-field">
+                    <label for="user-first-name">PARTICIPANT FIRST NAME</label>
+                    <input type="text" name="user-first-name" id="user-first-name">
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-m">Adult M - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-m">
+                <div class="participant-information-field">
+                    <label for="user-last-name">PARTICIPANT LAST NAME</label>
+                    <input type="text" name="user-last-name" id="user-last-name">
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-l">Adult L - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-l">
+                <div class="participant-information-field">
+                    <label for="user-birthday">PARTICIPANT BIRTHDATE</label>
+                    <input type="date" name="user-birthday" id="user-birthday">
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-xl">Adult XL - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-xl">
+                <div class="participant-information-field">
+                    <div>PARTICIPANT GENDER</div>
+                    <input type="radio" name="user-gender" id="user-gender-male">
+                    <label for="user-gender-male">Identifies as Male</label>
+                    <input type="radio" name="user-gender" id="user-gender-female">
+                    <label for="user-gender-female">Identifies as Female</label>
+                    <input type="radio" name="user-gender" id="user-gender-non-binary">
+                    <label for="user-gender-non-binary">Non-Binary</label>
+                    <input type="radio" name="user-gender" id="user-gender-no-answer">
+                    <label for="user-gender-no-answer">Prefer Not To Say</label>
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-xxl">Adult XXL - Tech</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-xxl">
+                <div class="participant-information-field">
+                    <div>COUNTRY</div>
+                    <input type="radio" name="user-country" id="user-country-canada">
+                    <label for="user-country-canada">Canada</label>
+                    <input type="radio" name="user-country" id="user-country-usa">
+                    <label for="user-country-usa">USA</label>
+                    <input type="radio" name="user-country" id="user-country-intl">
+                    <label for="user-country-intl">International</label>
                 </div>
-                <div class="shirt-option">
-                    <label for="user-shirt-size-none">No shirt, thanks!</label>
-                    <input type="radio" name="user-shirt-size" id="user-shirt-size-none">
+                <div class="participant-information-field">
+                    <label for="user-street-address">STREET ADDRESS (W/APT#)</label>
+                    <input type="text" name="user-street-address" id="user-street-address">
                 </div>
-            </div>
-            <div class="participant-information-field">
-                <div class="heading">ARE YOU A WHEELCHAIR OR HANDCRANK PARTICIPANT?</div>
-                <div class="wheelchair-option">
-                    <label for="user-wheelchair-option-yes-comp">Yes - Competitive.</label>
-                    <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-yes-comp">
+                <div class="participant-information-field">
+                    <label for="user-city">CITY</label>
+                    <input type="text" name="user-city" id="user-city">
                 </div>
-                <div class="wheelchair-option">
-                    <label for="user-wheelchair-option-yes-non-comp">Yes - Non-competitive.</label>
-                    <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-yes-non-comp">
+                <div class="participant-information-field">
+                    <label for="user-province">PROVINCE</label>
+                    <select name="user-province" id="user-province">
+                        <option value="Alberta">Alberta</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Alberta">Alberta</option>
+                    </select>
                 </div>
-                <div class="wheelchair-option">
-                    <label for="user-wheelchair-option-no">No.</label>
-                    <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-no">
+                <div class="participant-information-field">
+                    <label for="user-postal-code">POSTAL CODE</label>
+                    <input type="text" name="user-postal-code" id="user-postal-code">
                 </div>
+                <div class="participant-information-field">
+                    <label for="user-phone-number">PHONE</label>
+                    <input type="number" name="user-phone-number" id="user-phone-number">
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-emergency-contact-name">EMERGENCY CONTACT NAME</label>
+                    <input type="text" name="user-emergency-contact-name" id="user-emergency-contact-name">
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-emergency-contact-phone">EMERGENCY CONTACT PHONE</label>
+                    <input type="number" name="user-emergency-contact-phone" id="user-emergency-contact-phone">
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-medical-alert">MEDICAL ALERT</label>
+                    <input type="text" name="user-medical-alert" id="user-medical-alert">
+                </div>
+                <div class="participant-information-field"></div>
                 
+                <div class="participant-information-field">
+                    <h4>Participant Shirt Size</h4>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-xs">Adult XS - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-xs">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-s">Adult S - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-s">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-m">Adult M - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-m">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-l">Adult L - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-l">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-xl">Adult XL - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-xl">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-xxl">Adult XXL - Tech</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-xxl">
+                    </div>
+                    <div class="shirt-option">
+                        <label for="user-shirt-size-none">No shirt, thanks!</label>
+                        <input type="radio" name="user-shirt-size" id="user-shirt-size-none">
+                    </div>
+                </div>
+                <div class="participant-information-field">
+                    <div class="heading">ARE YOU A WHEELCHAIR OR HANDCRANK PARTICIPANT?</div>
+                    <div class="wheelchair-option">
+                        <label for="user-wheelchair-option-yes-comp">Yes - Competitive.</label>
+                        <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-yes-comp">
+                    </div>
+                    <div class="wheelchair-option">
+                        <label for="user-wheelchair-option-yes-non-comp">Yes - Non-competitive.</label>
+                        <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-yes-non-comp">
+                    </div>
+                    <div class="wheelchair-option">
+                        <label for="user-wheelchair-option-no">No.</label>
+                        <input type="radio" name="user-wheelchair-option" id="user-wheelchair-option-no">
+                    </div>
+                
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-bib-personalize">PERSONALIZE YOUR RACE BIB. FOR INDIVIDUALS, DEADLINE IS MARCH 31ST. FOR TEAM MEMBERS, IT WILL BE ON THEIR FINAL DEADLINES.</label>
+                    <input type="text" name="user-bib-personalize" id="user-bib-personalize">
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-race-count">HOW MANY TIMES HAVE YOU RUN THE VANCOUVER SUN RUN (NOT INCLUDING THIS YEAR)?</label>
+                    <input type="number" name="user-race-count" id="user-race-count">
+                </div>
+                <div class="participant-information-field">
+                    <label for="user-event-awareness">HOW DID YOU HEAR ABOUT THE 2024 VANCOUVER SUN RUN?</label>
+                    <select name="user-event-awareness" id="user-event-awareness">
+                        <option value="Other">Friend, Family, Colleague</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="participant-information-field"></div>
             </div>
-            <div class="participant-information-field">
-                <label for="user-bib-personalize">PERSONALIZE YOUR RACE BIB. FOR INDIVIDUALS, DEADLINE IS MARCH 31ST. FOR TEAM MEMBERS, IT WILL BE ON THEIR FINAL DEADLINES.</label>
-                <input type="text" name="user-bib-personalize" id="user-bib-personalize">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-race-count">HOW MANY TIMES HAVE YOU RUN THE VANCOUVER SUN RUN (NOT INCLUDING THIS YEAR)?</label>
-                <input type="number" name="user-race-count" id="user-race-count">
-            </div>
-            <div class="participant-information-field">
-                <label for="user-event-awareness">HOW DID YOU HEAR ABOUT THE 2024 VANCOUVER SUN RUN?</label>
-                <select name="user-event-awareness" id="user-event-awareness">
-                    <option value="Other">Friend, Family, Colleague</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="participant-information-field"></div>
 
         </section>
 
         <section class="form-section">
-            <h2>Donation</h2>
+            <div class="section-header">
+                <h2>Donation</h2>
+                <span class="material-symbols-outlined expand-button">
+                    expand_more
+                </span>
+            </div>
 
-            <div class="donation-row">
-                <div class="donation-org">ORGANIZATION A</div>
-                <div class="donation-amount">
-                    <label for="org-a-donation">AMOUNT C$</label>
-                    <input type="number" name="org-a-donation" id="org-a-donation">
+            <div class="section-content">
+                <div class="donation-row">
+                    <div class="donation-org">ORGANIZATION A</div>
+                    <div class="donation-amount">
+                        <label for="org-a-donation">AMOUNT C$</label>
+                        <input type="number" name="org-a-donation" id="org-a-donation">
+                    </div>
                 </div>
-            </div>
-            <div class="donation-row">
-                <div class="donation-org">ORGANIZATION A</div>
-                <div class="donation-amount">
-                    <label for="org-a-donation">AMOUNT C$</label>
-                    <input type="number" name="org-a-donation" id="org-a-donation">
+                <div class="donation-row">
+                    <div class="donation-org">ORGANIZATION A</div>
+                    <div class="donation-amount">
+                        <label for="org-a-donation">AMOUNT C$</label>
+                        <input type="number" name="org-a-donation" id="org-a-donation">
+                    </div>
                 </div>
-            </div>
-            <div class="donation-row">
-                <div class="donation-org">ORGANIZATION A</div>
-                <div class="donation-amount">
-                    <label for="org-a-donation">AMOUNT C$</label>
-                    <input type="number" name="org-a-donation" id="org-a-donation">
+                <div class="donation-row">
+                    <div class="donation-org">ORGANIZATION A</div>
+                    <div class="donation-amount">
+                        <label for="org-a-donation">AMOUNT C$</label>
+                        <input type="number" name="org-a-donation" id="org-a-donation">
+                    </div>
                 </div>
-            </div>
-            <div class="donation-row">
-                <div class="donation-org">ORGANIZATION A</div>
-                <div class="donation-amount">
-                    <label for="org-a-donation">AMOUNT C$</label>
-                    <input type="number" name="org-a-donation" id="org-a-donation">
+                <div class="donation-row">
+                    <div class="donation-org">ORGANIZATION A</div>
+                    <div class="donation-amount">
+                        <label for="org-a-donation">AMOUNT C$</label>
+                        <input type="number" name="org-a-donation" id="org-a-donation">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="form-section">
-            <h2>Waiver</h2>
-            <div class="waiver-row">
-                <input type="checkbox" name="user-agree-terms" id="user-agree-terms">
-                <label for="user-agree-terms">I HAVE READ AND AGREED TO THE TERMS</label>
+            <div class="section-header">
+                <h2>Waiver</h2>
+                <span class="material-symbols-outlined expand-button">
+                    expand_more
+                </span>
             </div>
-            <div class="waiver-row">
-                <div class="heading">PARTICIPANT AGE</div>
-                <div class="age-option">
-                    <!-- why do we need this if we have their age above? -->
-                    <input type="radio" name="user-age-info" id="user-age-adult">
-                    <label for="user-age-adult">19 or older</label>
+
+
+            <div class="section-content">
+                <div class="waiver-row">
+                    <input type="checkbox" name="user-agree-terms" id="user-agree-terms">
+                    <label for="user-agree-terms">I HAVE READ AND AGREED TO THE TERMS</label>
                 </div>
-                <div class="age-option">
-                    <input type="radio" name="user-age-info" id="user-age-non-adult">
-                    <label for="user-age-non-adult">Under 19</label>
+                <div class="waiver-row">
+                    <div class="heading">PARTICIPANT AGE</div>
+                    <div class="age-option">
+                        <!-- why do we need this if we have their age above? -->
+                        <input type="radio" name="user-age-info" id="user-age-adult">
+                        <label for="user-age-adult">19 or older</label>
+                    </div>
+                    <div class="age-option">
+                        <input type="radio" name="user-age-info" id="user-age-non-adult">
+                        <label for="user-age-non-adult">Under 19</label>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="form-section">
-            <h2>Payment</h2>
+            <div class="section-header">
+                <h2>Payment</h2>
+                <span class="material-symbols-outlined expand-button">
+                    expand_more
+                </span>
+            </div>
 
-            <div class="promo-code-section">
-                <label for="promo-code">PROMO CODE</label>
-                <input type="text" name="promo-code" id="promo-code">
-                <button type="button">APPLY</button>
-            </div>            
+            <div class="section-content">
+                <div class="promo-code-section">
+                    <label for="promo-code">PROMO CODE</label>
+                    <input type="text" name="promo-code" id="promo-code">
+                    <button type="button">APPLY</button>
+                </div>
+            </div>          
 
         </section>
 
