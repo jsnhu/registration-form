@@ -14,3 +14,18 @@ sectionHeaders.forEach((header) => {
         header.querySelector('.expand-button').classList.toggle('upside-down');
     })
 })
+
+// submit and cancel button
+
+const registrationForm = document.querySelector('#registration-form');
+const cancelButton = document.querySelector('#cancel-button');
+const submitButton = document.querySelector('#submit-button');
+
+cancelButton.addEventListener('click', () => {
+    registrationForm.reset();
+    alert('Form reset!')
+})
+
+submitButton.addEventListener('click', () => {
+    alert('Submitted!')
+})
