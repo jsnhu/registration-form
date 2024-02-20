@@ -94,7 +94,7 @@
             </div>
 
             <div class="section-content">
-                <label for="teams-list">TEAM*</label>
+                <label for="teams-list"><h3>Team</h3></label>
                 <div class="team-dropdown-box">
                     <select name="teams-list" id="teams-list">
                         <option value="volvo">Volvo</option>
@@ -103,8 +103,8 @@
                         <option value="audi">Audi</option>
                     </select>
                 </div>
-                <label for="team-access-code">TEAM ACCESS CODE*</label>
-                <input type="number" id="team-access-code" name="team-access-code">
+                <label for="team-access-code"><h3>Team Access Code</h3></label>
+                <input type="text" id="team-access-code" name="team-access-code">
             </div>
         </section>
 
@@ -192,10 +192,8 @@
                     <label for="user-medical-alert">MEDICAL ALERT</label>
                     <input type="text" name="user-medical-alert" id="user-medical-alert">
                 </div>
-                <div class="participant-information-field"></div>
-                
                 <div class="participant-information-field">
-                    <h3>Participant Shirt Size</h3>
+                    <div>PARTICIPANT SHIRT SIZE</div>
                     <div class="shirt-option">
                         <input type="radio" name="user-shirt-size" id="user-shirt-size-xs">
                         <label for="user-shirt-size-xs">Adult XS - Tech</label>
@@ -315,7 +313,7 @@
                     <input type="checkbox" name="user-agree-terms" id="user-agree-terms">
                     <label for="user-agree-terms">I HAVE READ AND AGREED TO THE TERMS</label>
                 </div>
-                <div class="waiver-row">
+                <div class="participant-information-field">
                     <h3>Participant Age</h3>
                     <div class="age-option">
                         <!-- why do we need this if we have their age above? -->
