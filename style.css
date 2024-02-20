@@ -70,3 +70,8 @@ body {
     flex-direction: column;
     gap: 5px;
 }
+
+.event-category label {
+    display: flex;
+    justify-content: space-between;
+}
