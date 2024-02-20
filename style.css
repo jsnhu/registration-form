@@ -21,6 +21,7 @@
     --form-grey-9: #272c33;
 
     font-family: 'Inter', serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scrollbar-gutter: stable;
 }
 
 body {
