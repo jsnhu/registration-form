@@ -91,3 +91,7 @@ span.expand-button {
     justify-content: space-between;
     align-items: center;
 }
+
+#categories:hover {
+    cursor: pointer;
+}
