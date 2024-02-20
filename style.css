@@ -8,6 +8,18 @@
     --secondary-color: #5f89ef;
     --tertiary-color: #efe5dd;
     --background-color: #ffffff;
+
+    --form-grey-0: #f6f6f8;
+    --form-grey-1: #d1d5d9;
+    --form-grey-2: #b2b9c1;
+    --form-grey-3: #939eaa;
+    --form-grey-4: #7c8998;
+    --form-grey-5: #657586;
+    --form-grey-6: #586776;
+    --form-grey-7: #48535f;
+    --form-grey-8: #39414a;
+    --form-grey-9: #272c33;
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -27,8 +39,8 @@ body {
 }
 
 .form-section {
-    background-color: #f6f6f8;
-    border: 2px solid #d1d5d9;
+    background-color: var(--form-grey-0);
+    border: 2px solid var(--form-grey-1);
     padding: min(40px, 2%);
 }
 
@@ -38,8 +50,8 @@ body {
 
 .event-category label {
     padding: 10px 3%;
-    background-color: hwb(210 82% 15%);
-    border: 1px solid hwb(210 82% 45%);
+    background-color: var(--form-grey-1);
+    border: 1px solid var(--form-grey-3);
 
 }
 
