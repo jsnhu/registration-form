@@ -1,11 +1,11 @@
 // expand content
 
-const categoriesSection = document.querySelector('#categories .section-header');
-const categoriesContent = document.querySelector('.categories-content');
-const categoriesExpandButton = document.querySelector('#categories .section-header .expand-button');
+const sectionHeaders = document.querySelectorAll('.section-header');
 
-categoriesSection.addEventListener('click', (e) => {
-   categoriesContent.classList.toggle('show');
-
-   categoriesExpandButton.classList.toggle('upside-down');
-});
+sectionHeaders.forEach((header) => {
+    header.addEventListener('click', () => {
+        const sectionContent = header.parentNode.querySelector('.section-content');
+        sectionContent.classList.toggle('show');
+        header.querySelector('.expand-button').classList.toggle('upside-down');
+    })
+})
