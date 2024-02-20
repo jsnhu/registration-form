@@ -238,3 +238,7 @@ select {
 input {
     font-size: inherit;
 }
+
+h1 {
+    font-weight: 600;
+}
